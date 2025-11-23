@@ -115,12 +115,8 @@ def health():
     return jsonify({'status': 'healthy', 'message': 'Diabetes Risk Prediction API is running'})
 
 if __name__ == '__main__':
-    print("=" * 50)
-    print("Diabetes Risk Prediction API")
-    print("=" * 50)
-    print("Starting server on http://localhost:5000")
-    print("Press Ctrl+C to stop the server")
-    print("=" * 50)
-    port = int(os.environ.get("PORT", 5000))
+    port = int(os.environ.get("PORT", 7860))
     app.run(debug=False, host='0.0.0.0', port=port)
+
+
 
